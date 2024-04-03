@@ -18,7 +18,7 @@ const main = async (userDetails) => {
 
 router.post("/Signup", async (req, res) => {
     try {
-        const result = await main({'name':'siva', 'gender' : 'male'});
+        const result = await main(req.body);
         console.log(result);
         res.status(200).send("User Signed up Successfully");
     } catch (err) {
