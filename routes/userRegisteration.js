@@ -28,6 +28,7 @@ router.post("/Signup", async (req, res) => {
     }
 });
 
+module.exports = router;
 
 /*
 
@@ -50,4 +51,4 @@ router.get("/UserRegistration", async (req, res) => {
     }
 });
 */
-module.exports = router;
+
